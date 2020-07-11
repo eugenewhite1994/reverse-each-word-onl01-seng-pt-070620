@@ -1,8 +1,6 @@
-def reverse_each_word(word)
-    reversed = string.split("")
-  reversedArray = []
-  word.size.times { reversed << reversed.pop }
-  reversedArray.join
+def reverse_each_word(sentence)
+  words_array = sentence.split(" ")
+  new_array = []
+  new_array = words_array.collect {|word| word.reverse }
+  new_array.join(" ")
 end
-reverse_each_word("hello")
-  
