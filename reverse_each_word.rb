@@ -4,5 +4,5 @@ def reverse_each_word(word)
   word.size.times { reversed << reversed.pop }
   reversedArray.join
 end
-puts reverse_string("hello")
+reverse_each_word("hello")
   
